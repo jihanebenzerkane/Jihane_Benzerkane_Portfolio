@@ -219,73 +219,162 @@ body {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-/* Ambient Sun Rays (God Rays) & Warm Golden Light */
+/* Atmospheric Magical Sun Rays (God Rays) & Warm Golden Radiance */
 .sun-rays-container {
   position: absolute;
-  top: -60px;
+  top: -80px;
   left: -80px;
   width: 140%;
   height: 140%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
+}
+
+/* Radiant Sun Corona at Top-Left Origin */
+.sun-rays-corona {
+  position: absolute;
+  top: -120px;
+  left: -100px;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.45) 0%, rgba(245, 158, 11, 0.28) 32%, rgba(217, 119, 6, 0.12) 60%, transparent 80%);
+  filter: blur(55px);
+  pointer-events: none;
+  animation: coronaPulse 8s ease-in-out infinite alternate;
 }
 
 .sun-rays-glow {
   position: absolute;
-  top: -80px;
-  left: -40px;
-  width: 480px;
-  height: 480px;
+  top: 30px;
+  left: 70px;
+  width: 540px;
+  height: 540px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, rgba(217, 119, 6, 0.12) 42%, transparent 72%);
-  filter: blur(45px);
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.32) 0%, rgba(217, 119, 6, 0.16) 45%, transparent 75%);
+  filter: blur(50px);
   pointer-events: none;
+  animation: coronaGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes coronaPulse {
+  0% { transform: scale(0.95); opacity: 0.85; }
+  100% { transform: scale(1.10); opacity: 1; }
+}
+
+@keyframes coronaGlow {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.75; }
+  100% { transform: translate(25px, 15px) scale(1.12); opacity: 1; }
 }
 
 .sun-beam {
   position: absolute;
   transform-origin: top left;
-  transform: rotate(32deg);
+  transform: rotate(34deg);
   pointer-events: none;
-  filter: blur(16px);
+  filter: blur(18px);
   mix-blend-mode: screen;
+  animation: sunbeamPulse 7s ease-in-out infinite alternate;
+}
+
+@keyframes sunbeamPulse {
+  0% {
+    opacity: 0.75;
+    transform: rotate(33deg) scaleY(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(35.5deg) scaleY(1.03);
+  }
+  100% {
+    opacity: 0.82;
+    transform: rotate(34deg) scaleY(0.98);
+  }
 }
 
 .beam-1 {
-  top: -100px;
-  left: 40px;
-  width: 160px;
-  height: 1000px;
-  background: linear-gradient(180deg, rgba(251, 191, 36, 0.14) 0%, rgba(217, 119, 6, 0.08) 45%, transparent 88%);
-  opacity: 0.9;
+  top: -120px;
+  left: 30px;
+  width: 220px;
+  height: 1250px;
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.35) 0%, rgba(245, 158, 11, 0.20) 35%, rgba(217, 119, 6, 0.08) 65%, transparent 92%);
+  animation-duration: 6.5s;
 }
 
 .beam-2 {
-  top: -70px;
-  left: 220px;
-  width: 95px;
-  height: 920px;
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.17) 0%, rgba(217, 119, 6, 0.06) 55%, transparent 92%);
-  opacity: 0.8;
+  top: -90px;
+  left: 250px;
+  width: 150px;
+  height: 1150px;
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.40) 0%, rgba(245, 158, 11, 0.24) 40%, rgba(217, 119, 6, 0.08) 70%, transparent 94%);
+  animation-duration: 8.5s;
+  animation-delay: -1.5s;
 }
 
 .beam-3 {
-  top: -120px;
-  left: 380px;
-  width: 200px;
-  height: 1050px;
-  background: linear-gradient(180deg, rgba(251, 191, 36, 0.12) 0%, rgba(189, 83, 52, 0.05) 50%, transparent 88%);
-  opacity: 0.7;
+  top: -140px;
+  left: 450px;
+  width: 280px;
+  height: 1300px;
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.28) 0%, rgba(217, 119, 6, 0.14) 45%, rgba(189, 83, 52, 0.06) 75%, transparent 92%);
+  animation-duration: 9.5s;
+  animation-delay: -3s;
 }
 
 .beam-4 {
-  top: -50px;
-  left: -60px;
-  width: 110px;
-  height: 800px;
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.14) 0%, transparent 75%);
-  opacity: 0.65;
+  top: -60px;
+  left: -70px;
+  width: 160px;
+  height: 1000px;
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.30) 0%, rgba(217, 119, 6, 0.15) 50%, transparent 88%);
+  animation-duration: 7s;
+  animation-delay: -2s;
+}
+
+.beam-5 {
+  top: -100px;
+  left: 700px;
+  width: 200px;
+  height: 1200px;
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.22) 0%, rgba(245, 158, 11, 0.12) 40%, transparent 88%);
+  animation-duration: 10s;
+  animation-delay: -4s;
+}
+
+/* Floating Magical Sun Motes (Golden Dust Specks in God Rays) */
+.sun-mote {
+  position: absolute;
+  border-radius: 50%;
+  background: #fde68a;
+  box-shadow: 0 0 10px 2px rgba(251, 191, 36, 0.8), 0 0 20px 4px rgba(245, 158, 11, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  animation: moteDrift linear infinite;
+}
+
+.mote-1 { width: 5px; height: 5px; top: 15%; left: 18%; animation-duration: 8s; animation-delay: 0s; }
+.mote-2 { width: 4px; height: 4px; top: 28%; left: 32%; animation-duration: 11s; animation-delay: 2s; }
+.mote-3 { width: 6px; height: 6px; top: 10%; left: 45%; animation-duration: 9s; animation-delay: 4s; }
+.mote-4 { width: 3px; height: 3px; top: 42%; left: 24%; animation-duration: 12s; animation-delay: 1s; }
+.mote-5 { width: 5px; height: 5px; top: 22%; left: 55%; animation-duration: 10s; animation-delay: 5s; }
+.mote-6 { width: 4px; height: 4px; top: 35%; left: 38%; animation-duration: 13s; animation-delay: 3s; }
+
+@keyframes moteDrift {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(120px, 180px) scale(1.15);
+    opacity: 0;
+  }
 }
 
 .hero-grid {
@@ -994,15 +1083,17 @@ body {
 }
 
 .github-dashboard-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: linear-gradient(175deg, #181310 0%, #15100d 100%);
+  border: 1px solid rgba(217, 119, 6, 0.22);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 30px rgba(217, 119, 6, 0.04);
   border-radius: var(--radius-md);
-  padding: 28px;
-  transition: border-color 0.2s ease;
+  padding: 32px 36px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .github-dashboard-card:hover {
-  border-color: var(--border-highlight);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(217, 119, 6, 0.08);
 }
 
 .github-dashboard-header {
@@ -1011,9 +1102,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.15);
 }
 
 .github-user-info {
@@ -1026,25 +1117,27 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: #201915;
+  border: 1px solid rgba(217, 119, 6, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--autumn-honey);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .github-user-meta h3 {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
 }
 
 .github-user-meta span {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--autumn-caramel);
 }
 
@@ -1056,10 +1149,10 @@ body {
 
 .gh-pill {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 5px 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  font-size: 0.74rem;
+  padding: 6px 14px;
+  background: #201915;
+  border: 1px solid rgba(217, 119, 6, 0.18);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
 }
@@ -1071,28 +1164,99 @@ body {
 .contribution-chart-wrap {
   width: 100%;
   overflow-x: auto;
-  padding: 16px 0 8px;
+  padding: 24px 20px;
   display: flex;
   justify-content: center;
+  background: #140f0c;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(217, 119, 6, 0.14);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contribution-chart-wrap a {
+  display: block;
+  width: 100%;
+  max-width: 980px;
 }
 
 .contribution-chart-wrap img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: var(--radius-sm);
-  filter: contrast(1.05);
+  display: block;
+  min-width: 680px;
+  border-radius: 4px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  transition: transform 0.25s ease;
+}
+
+.contribution-chart-wrap img:hover {
+  transform: scale(1.005);
 }
 
 .github-actions-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(217, 119, 6, 0.15);
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
+}
+
+.gh-legend-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.gh-legend-square {
+  width: 13px;
+  height: 13px;
+  border-radius: 2.5px;
+  display: inline-block;
+}
+
+.gh-legend-square.sq-0 { background: #221a15; border: 1px solid rgba(255, 255, 255, 0.05); }
+.gh-legend-square.sq-1 { background: #8c4415; }
+.gh-legend-square.sq-2 { background: #bf5d17; }
+.gh-legend-square.sq-3 { background: #e0791e; }
+.gh-legend-square.sq-4 { background: #f59e0b; box-shadow: 0 0 6px rgba(245, 158, 11, 0.4); }
+
+.gh-actions-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.gh-sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--autumn-honey);
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: livePulse 2s infinite ease-in-out;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.85); }
 }
 
 /* ==========================================================================
