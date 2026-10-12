@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#110d0b" />
+  <meta name="description" content="Engineering portfolio of Jihane Benzerkane, 4th-Year Student in Digital Transformation & AI at ENSAH. Creator of F1Track, Software Engineering Intern at ECS Informatique, Triple Oracle Certified." />
+  <title>Jihane Benzerkane · AI Engineering & Digital Transformation Portfolio</title>
+  
+  <!-- Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Atmospheric Subtle Japanese Autumn Rain & Leaves Canvas -->
+  <canvas id="autumn-rain-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Header with Profile Picture in Corner -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#home" aria-label="Jihane Benzerkane Home">
+        <img src="assets/jihane_profile.jpg" alt="Jihane Benzerkane" class="brand-avatar" />
+        <div class="brand-details">
+          <span class="brand-name">Jihane Benzerkane</span>
+          <span class="brand-sub">Digital Transformation & AI</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Overview</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#honors">Honors & Certs</a></li>
+        <li><a href="#academic">Education</a></li>
+        <li><a href="#toolkit">Technical Arsenal</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/CV_Jihane_Benzerkane.pdf" download="CV_Jihane_Benzerkane.pdf" class="btn-cv-nav">
+          <span>CV PDF</span> ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION: AUTUMN COZY STUDIO & ANALYTICAL ENGINEERING
+         ====================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Ambient Sun Rays (God Rays) Effect from Attached Inspiration -->
+      <div class="sun-rays-container" aria-hidden="true">
+        <div class="sun-rays-glow"></div>
+        <div class="sun-beam beam-1"></div>
+        <div class="sun-beam beam-2"></div>
+        <div class="sun-beam beam-3"></div>
+        <div class="sun-beam beam-4"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>4th-Year Engineering Student in Digital Transformation & AI · ENSAH</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering intelligent software & <span>digital transformation</span> with analytical depth.
+          </h1>
+
+          <p class="hero-description">
+            I'm <strong>Jihane Benzerkane</strong>, an engineering student in <strong>Digital Transformation & AI (TDIA)</strong> at ENSAH, Morocco. Specialized in robust backend architecture, AI-driven applications, and cloud systems. Creator of <strong>F1Track</strong>, developer of enterprise platforms at <strong>ECS Informatique</strong>, and selected as <strong>1 of 12 students nationwide</strong> for Oracle's R&D Summer Bootcamp.
+          </p>
+
+          <!-- Personalized Hero Stats (Relayed to Jihane, NOT F1Track mockup stats) -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <div class="stat-num caramel">4+</div>
+              <div class="stat-label">Production & Core Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num green">3x</div>
+              <div class="stat-label">Oracle Certified Credentials</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num rust">1 of 12</div>
+              <div class="stat-label">Nationwide Oracle Selection</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span> ↓
+            </a>
+            <a href="https://github.com/jihanebenzerkane" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>GitHub Profile</span> ↗
+            </a>
+            <a href="assets/CV_Jihane_Benzerkane.pdf" target="_blank" class="btn-secondary">
+              <span>Official Resume</span> ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero: Studio Card with Circular Profile Picture Alone -->
+        <div class="hero-card-studio">
+          <div class="studio-avatar-wrapper">
+            <img src="assets/jihane_profile.jpg" alt="Jihane Benzerkane" class="studio-circular-avatar" />
+          </div>
+
+          <div class="studio-content">
+            <div class="studio-header">
+              <span>STUDIO & ENGINEERING NOTEBOOK</span>
+              <span>ENSAH · BAC+4</span>
+            </div>
+
+            <h2 class="studio-name">Jihane Benzerkane</h2>
+            <div class="studio-role">Software Engineering · AI Engineering · Digital Transformation</div>
+
+            <div class="studio-meta-grid">
+              <div class="studio-meta-item">
+                <small>Location</small>
+                <strong>Morocco</strong>
+              </div>
+              <div class="studio-meta-item">
+                <small>Field</small>
+                <strong>AI & Digital Trans.</strong>
+              </div>
+              <div class="studio-meta-item">
+                <small>Credentials</small>
+                <strong>3x Oracle</strong>
+              </div>
+            </div>
+
+            <!-- Workspace Atmosphere Vignette: Pixel Desk GIF from Pinterest -->
+            <div class="vignette-frame studio-vignette">
+              <img src="assets/anime/pixel_desk.gif" alt="Cozy pixel workspace with vintage computer" class="vignette-gif" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         THE THRONE: CORE PROJECTS, NATIONWIDE HONOR & CERTIFICATIONS
+         ====================================================================== -->
+    <!-- ======================================================================
+         CORE ENGINEERING ACHIEVEMENTS (PROJECTS & INTERNSHIP)
+         ====================================================================== -->
+    <section class="throne-section" id="projects">
+      <div class="container">
+        <span class="section-kicker">Core Systems & Engineering Output</span>
+        <h2 class="section-title">Featured Projects & Systems</h2>
+        <p class="section-subtitle">
+          Flagship production deployments, enterprise internship systems, and AI-driven platforms built with robust architectures.
+        </p>
+
+        <!-- APEX PROJECT: F1Track Flagship Project with Real Snapshots -->
+        <article class="throne-card throne-card-apex" style="margin-bottom: 28px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+            <span class="card-top-tag tag-green" style="margin-bottom: 0;">Flagship Master Project</span>
+            <span class="card-meta" style="margin-bottom: 0;">Live on Oracle Cloud Infrastructure · f1track.duckdns.org</span>
+          </div>
+          <h3 class="card-title" style="font-size: 1.6rem; margin-bottom: 10px;">F1Track: Live Formula 1 Analytics Platform</h3>
+
+          <p class="card-body">
+            Full-stack engineering platform combining real-time OpenF1 telemetry polling (refreshed sub-second), a 50,000-iteration Monte Carlo race outcome prediction engine, historical database of 185,000+ records across 33 relational tables, and an interactive Three.js 3D car technical inspection studio.
+          </p>
+
+          <!-- Real Project Snapshot Gallery with Lightbox -->
+          <div class="f1track-snapshot-gallery">
+            <div class="snapshot-tabs-nav">
+              <button type="button" class="snap-tab-btn active" data-snap="telemetry">
+                Telemetry
+              </button>
+              <button type="button" class="snap-tab-btn" data-snap="predictions">
+                Monte Carlo
+              </button>
+              <button type="button" class="snap-tab-btn" data-snap="studio3d">
+                3D Studio
+              </button>
+              <button type="button" class="snap-tab-btn" data-snap="home">
+                Dashboard
+              </button>
+            </div>
+
+            <div class="snapshot-display-frame">
+              <img 
+                id="active-snapshot-img"
+                src="assets/f1track_real/F1Track_Telemetry.png" 
+                alt="F1Track Real Telemetry Snapshot" 
+                class="real-project-snapshot"
+                title="Click to view full-resolution snapshot"
+              />
+            </div>
+
+            <div class="snapshot-caption-bar">
+              <span id="snapshot-caption-title">Car Telemetry Channels & Velocity Interface</span>
+              <span id="snapshot-caption-tag">OPENF1 TELEMETRY CHANNELS</span>
+            </div>
+          </div>
+
+          <!-- Tech Pills -->
+          <div class="tech-pills-row">
+            <span class="tech-pill">Java · Spring Boot 3.2</span>
+            <span class="tech-pill">React 18</span>
+            <span class="tech-pill">Three.js</span>
+            <span class="tech-pill">Oracle Cloud (OCI)</span>
+            <span class="tech-pill">Docker & Nginx</span>
+            <span class="tech-pill">OpenF1 API</span>
+            <span class="tech-pill">185K+ Historical Records</span>
+            <span class="tech-pill">20+ REST Endpoints</span>
+          </div>
+
+          <!-- Actions Row -->
+          <div class="f1track-actions-row">
+            <a href="https://f1track.duckdns.org" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>Launch F1Track Live</span> ↗
+            </a>
+            <a href="https://github.com/jihanebenzerkane/F1Track-Performance" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>Source Code</span> ↗
+            </a>
+            <a href="https://youtu.be/kdbN6AMriW0" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>Video Demo</span> ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Secondary Projects Grid: ECS Informatique Internship, CodeDojo, PFE Platform -->
+        <div class="projects-secondary-grid">
+          <!-- 1. Raven: ECS Informatique Internship -->
+          <article class="sub-card ecs-internship-card">
+            <div class="ecs-visual-header">
+              <img src="assets/ecs_building.jpg" alt="ECS Informatique Headquarters" class="ecs-building-img" />
+              <div class="ecs-logo-badge">
+                <img src="assets/ecs_logo.png" alt="ECS Informatique Logo" class="ecs-logo-img" />
+              </div>
+            </div>
+            <div class="ecs-card-body">
+              <div class="sub-card-kicker">Software Engineering Internship</div>
+              <h3>Raven: Maintenance Visit Platform</h3>
+              <span class="card-meta" style="margin-bottom: 8px;">ECS Informatique, Rabat · Jul–Aug 2026 (2 months)</span>
+              <p>
+                Built a maintenance-visit planning platform using C# / ASP.NET Core and SQL Server, featuring a priority-scoring algorithm, automated technician-assignment recommendations, and an asynchronous Excel/PDF import-export pipeline.
+              </p>
+              <div class="sub-card-stats">
+                <div><strong>C# / .NET</strong> Backend API</div>
+                <div><strong>SQL Server</strong> Database</div>
+              </div>
+              <a href="https://github.com/jihanebenzerkane/Ask_Raven" target="_blank" rel="noopener noreferrer" class="sub-card-link">
+                <span>View Source Code (Ask_Raven)</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. CodeDojo: AI Socratic Java Learning Platform (Pinned Project) -->
+          <article class="sub-card">
+            <div class="sub-card-kicker">AI & Pedagogy · Pinned Project</div>
+            <h3>CodeDojo: Socratic AI Tutor</h3>
+            <span class="card-meta" style="margin-bottom: 8px;">Python · AI Guided Code Learning</span>
+            <p>
+              Apprentissage de la programmation Java par méthode socratique avec IA intégrée. Rather than outputting direct code solutions, the system analyzes student attempts and prompts them with targeted conceptual inquiries to guide independent bug resolution.
+            </p>
+            <div class="sub-card-stats">
+              <div><strong>Python</strong> Core Engine</div>
+              <div><strong>AI Socratic</strong> Guidance</div>
+            </div>
+            <a href="https://github.com/jihanebenzerkane/codedojo" target="_blank" rel="noopener noreferrer" class="sub-card-link">
+              <span>View Source Code (CodeDojo)</span> ↗
+            </a>
+          </article>
+
+          <!-- 3. PFE Assignment Platform (Pinned Project) -->
+          <article class="sub-card">
+            <div class="sub-card-kicker">Academic Platform · Pinned Project</div>
+            <h3>PFE Assignment & Migration</h3>
+            <span class="card-meta" style="margin-bottom: 8px;">PHP · Laravel · MySQL Database</span>
+            <p>
+              Automates multi-sheet Excel data migration into MySQL with strict schema validation and audit logs. Implements a constraint-based scheduling algorithm assigning 105+ students to faculty supervisors with zero conflicts.
+            </p>
+            <div class="sub-card-stats">
+              <div><strong>105+</strong> Students</div>
+              <div><strong>0</strong> Conflicts</div>
+            </div>
+            <a href="https://github.com/jihanebenzerkane/PFE_project" target="_blank" rel="noopener noreferrer" class="sub-card-link">
+              <span>View Source Code (PFE_project)</span> ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         GITHUB ACTIVITY & CONTRIBUTION DASHBOARD
+         ====================================================================== -->
+    <section class="github-section" id="github">
+      <div class="container">
+        <span class="section-kicker">Open Source & Code Delivery</span>
+        <h2 class="section-title">GitHub Contribution Dashboard</h2>
+        <p class="section-subtitle">
+          Continuous software delivery, public repositories, and open source development on GitHub.
+        </p>
+
+        <div class="github-dashboard-card">
+          <div class="github-dashboard-header">
+            <div class="github-user-info">
+              <div class="github-icon-circle">
+                <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+              </div>
+              <div class="github-user-meta">
+                <h3>jihanebenzerkane</h3>
+                <span>AI & Software Engineering Student · GitHub Profile</span>
+              </div>
+            </div>
+
+            <div class="github-stats-pills">
+              <span class="gh-pill">Repositories: <strong>14</strong></span>
+              <span class="gh-pill">Pinned Systems: <strong>4</strong></span>
+              <span class="gh-pill">Theme: <strong>Autumn Caramel</strong></span>
+            </div>
+          </div>
+
+          <!-- Color-matched Contribution Graph -->
+          <div class="contribution-chart-wrap">
+            <a href="https://github.com/jihanebenzerkane" target="_blank" rel="noopener noreferrer" title="View Jihane Benzerkane on GitHub">
+              <img 
+                src="assets/github_contributions.svg" 
+                alt="GitHub Contribution Calendar for jihanebenzerkane" 
+                loading="lazy"
+              />
+            </a>
+          </div>
+
+          <div class="github-actions-bar">
+            <span>Live GitHub activity synced directly with GitHub profile</span>
+            <a href="https://github.com/jihanebenzerkane" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.78rem; padding: 7px 14px;">
+              <span>Open github.com/jihanebenzerkane</span> ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         HONORS & CERTIFICATIONS SECTION
+         ====================================================================== -->
+    <section class="honors-section" id="honors">
+      <div class="container">
+        <span class="section-kicker">Distinctions & Validated Credentials</span>
+        <h2 class="section-title">Honors & Certifications</h2>
+        <p class="section-subtitle">
+          Competitive national honors and verified industry credentials from Oracle and LinkedIn.
+        </p>
+
+        <div class="honors-grid">
+          <!-- LEFT: Oracle Morocco R&D Summer Bootcamp (Honor) -->
+          <article class="honor-card-main">
+            <span class="card-top-tag tag-caramel" style="width: fit-content;">National Competitive Honor</span>
+            <h3 class="card-title">Oracle Morocco R&D Summer Bootcamp (FY27)</h3>
+            <span class="card-meta">Casablanca, Morocco · July 2026</span>
+
+            <div class="honor-callout-box">
+              <div class="honor-number">1 of 12</div>
+              <p>Selected nationwide from universities and engineering schools across Morocco following a competitive process.</p>
+            </div>
+
+            <p class="card-body">
+              Honored to be immersed in Oracle’s R&D environment through masterclasses and technical sessions led directly by researchers on microservices, cloud infrastructure, and distributed computing.
+            </p>
+
+            <div class="verified-links-list" style="margin-top: auto;">
+              <a href="https://lnkd.in/p/eyX4rBCT" target="_blank" rel="noopener noreferrer" class="verified-link-btn">
+                <span>Oracle Manager's Announcement</span> ↗
+              </a>
+              <a href="https://lnkd.in/p/eaX4djiX" target="_blank" rel="noopener noreferrer" class="verified-link-btn">
+                <span>My Reflection & Bootcamp Post</span> ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- RIGHT: Triple Oracle Certification Vault & LinkedIn -->
+          <article class="honor-card-main">
+            <span class="card-top-tag tag-caramel" style="width: fit-content;">Verified Professional Credentials</span>
+            <h3 class="card-title">Triple Oracle Certification Vault</h3>
+            <span class="card-meta">Oracle University & LinkedIn Verified · 2026</span>
+
+            <p class="card-body">
+              Validated industry competencies spanning AI fundamentals, enterprise Java development, and generative AI systems.
+            </p>
+
+            <div class="certs-list" style="margin-bottom: 20px;">
+              <div class="cert-item">
+                <h4>Oracle OCI AI Foundations Associate</h4>
+                <span>Oracle · February 2026<b class="cert-verified">✓ Verified</b></span>
+              </div>
+
+              <div class="cert-item">
+                <h4>Oracle Generative AI Professional</h4>
+                <span>Oracle · 2026<b class="cert-verified">✓ Verified</b></span>
+              </div>
+
+              <div class="cert-item">
+                <h4>Oracle Java SE 21 Developer</h4>
+                <span>Oracle · 2026<b class="cert-verified">✓ Verified</b></span>
+              </div>
+            </div>
+
+            <div class="verified-links-list" style="margin-top: auto;">
+              <a href="https://www.linkedin.com/in/jihanebenzerkane" target="_blank" rel="noopener noreferrer" class="verified-link-btn">
+                <span>View All Credentials on LinkedIn</span> ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EDUCATION & RESEARCH FOCUS
+         ====================================================================== -->
+    <section class="academic-section" id="academic">
+      <div class="container academic-grid">
+        <!-- Education Card (Compact Grades + Pixel GIF from Pinterest) -->
+        <article class="academic-card">
+          <span class="section-kicker" style="color: var(--autumn-amber);">Degree & Pathway</span>
+          <h3>Engineering Diploma in Digital Transformation & AI</h3>
+          <span class="academic-sub">ENSAH · Université Abdelmalek Essaâdi (2023 – 2028 Expected)</span>
+
+          <p>
+            Currently in Year 4 (Bac+4) of a five-year integrated state engineering degree, covering software development, AI systems, numerical mathematics, distributed architecture, and data-driven systems.
+          </p>
+
+          <table class="grades-compact-table" style="margin-bottom: 18px;">
+            <tbody>
+              <tr>
+                <td>Academic Year 2023–2024</td>
+                <td>14.45 / 20 <span class="gpa-val">(3.61 / 5.0)</span></td>
+              </tr>
+              <tr>
+                <td>Academic Year 2024–2025</td>
+                <td>13.43 / 20 <span class="gpa-val">(3.36 / 5.0)</span></td>
+              </tr>
+              <tr>
+                <td>Academic Year 2025–2026</td>
+                <td>14.32 / 20 <span class="gpa-val">(3.58 / 5.0)</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Degree Section Vignette: Pixel Desk GIF from Pinterest -->
+          <div class="vignette-frame degree-vignette">
+            <img src="assets/anime/pixel_desk.gif" alt="Cozy pixel study workspace" class="vignette-gif" />
+          </div>
+        </article>
+
+        <!-- Technical & AI Engineering Focus -->
+        <article class="academic-card">
+          <span class="section-kicker" style="color: var(--pine-sage);">Interests</span>
+          <h3>AI Engineering & Software Directions</h3>
+          <span class="academic-sub">Core Technical Focus</span>
+
+          <div class="pillars-list">
+            <div class="pillar-item">
+              <h4>AI Engineering & Intelligent Systems</h4>
+              <p>Developing agentic architectures, Socratic pedagogical models, and embedding-driven retrieval engines using modern AI frameworks.</p>
+            </div>
+
+            <div class="pillar-item">
+              <h4>Real-Time Stream Processing & Backend</h4>
+              <p>Handling sub-second data streams (such as live telemetry polled every 500ms) with low-latency REST APIs, Spring Boot, and reactive pipelines.</p>
+            </div>
+
+            <div class="pillar-item">
+              <h4>Cloud Infrastructure & Microservices</h4>
+              <p>Deploying containerized microservices on Oracle Cloud Infrastructure, utilizing Nginx reverse proxies, Docker, and scalable database schemas.</p>
+            </div>
+
+            <!-- Study Atmosphere Vignette -->
+            <div class="vignette-frame research-vignette">
+              <img src="assets/anime/coffee_time.gif" alt="Cozy coffee workspace" class="vignette-gif" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TECHNICAL ARSENAL (TOOLKIT)
+         ====================================================================== -->
+    <section class="toolkit-section" id="toolkit">
+      <div class="container">
+        <span class="section-kicker">Competencies</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <p class="section-subtitle">
+          Core languages, frameworks, algorithms, and cloud tools practiced across projects.
+        </p>
+
+        <div class="toolkit-grid">
+          <div class="toolkit-card">
+            <h3>Languages & Core Tech</h3>
+            <div class="toolkit-tags">
+              <span class="tool-tag">Python (FastAPI)</span>
+              <span class="tool-tag">Java (Spring Boot)</span>
+              <span class="tool-tag">C / C++</span>
+              <span class="tool-tag">C# (.NET / ASP.NET Core)</span>
+              <span class="tool-tag">SQL (Oracle, MySQL, SQL Server)</span>
+              <span class="tool-tag">JavaScript (React, Three.js)</span>
+              <span class="tool-tag">PHP (Laravel)</span>
+            </div>
+          </div>
+
+          <div class="toolkit-card">
+            <h3>AI Engineering & Software Systems</h3>
+            <div class="toolkit-tags">
+              <span class="tool-tag">AI Engineering & LLM Integration</span>
+              <span class="tool-tag">Socratic Pedagogy Engine</span>
+              <span class="tool-tag">Constraint-Based Optimization</span>
+              <span class="tool-tag">Algorithmic Scoring</span>
+              <span class="tool-tag">ETL & Data Migration Pipelines</span>
+              <span class="tool-tag">Probabilistic Modeling</span>
+              <span class="tool-tag">Relational Schemas (33 Tables)</span>
+            </div>
+          </div>
+
+          <div class="toolkit-card">
+            <h3>Cloud & Tools</h3>
+            <div class="toolkit-tags">
+              <span class="tool-tag">Oracle Cloud Infrastructure (OCI)</span>
+              <span class="tool-tag">Docker</span>
+              <span class="tool-tag">Nginx</span>
+              <span class="tool-tag">RESTful APIs</span>
+              <span class="tool-tag">Entity Framework (EF Core)</span>
+              <span class="tool-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ACTIVITIES, GRAPHIC DESIGN & LANGUAGES
+         ====================================================================== -->
+    <section class="leadership-section" id="activities">
+      <div class="container leadership-grid">
+        <!-- Chess Club & Enactus Activities -->
+        <article class="lead-card">
+          <span class="section-kicker" style="color: var(--autumn-amber);">Extracurricular</span>
+          <h3>Design & Community Leadership</h3>
+          <span class="lead-meta">Enactus ENSAH & ENSAH Chess Club</span>
+
+          <p>
+            <strong>Graphic Designer & Event Organizer · Enactus ENSAH (2023 – 2025)</strong><br>
+            Designed digital collateral, presentation materials, and banners for social entrepreneurship events, ensuring consistent visual identity.
+          </p>
+
+          <p style="margin-bottom: 0;">
+            <strong>Graphic Designer · ENSAH Chess Club (2024 – 2026)</strong><br>
+            Created tournament posters and social media branding for the university chess community, combining strategic interests with graphic creation.
+          </p>
+        </article>
+
+        <!-- Languages & Cozy Art -->
+        <article class="lead-card">
+          <span class="section-kicker" style="color: var(--pine-sage);">Communication</span>
+          <h3>Languages</h3>
+          <span class="lead-meta">Multilingual Proficiency</span>
+
+          <div class="languages-grid" style="margin-bottom: 18px;">
+            <div class="lang-box">
+              <strong>Arabic</strong>
+              <span>Native</span>
+            </div>
+            <div class="lang-box">
+              <strong>French</strong>
+              <span>Fluent</span>
+            </div>
+            <div class="lang-box">
+              <strong>English</strong>
+              <span>B2</span>
+            </div>
+            <div class="lang-box">
+              <strong>Italian</strong>
+              <span>Beginner</span>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION WITH FUNCTIONAL FORM
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-header">
+          <span class="section-kicker">Connect</span>
+          <h2>Let's build reliable software together.</h2>
+          <p>
+            Whether you have an engineering opportunity, a research inquiry, or would like to connect about simulation and data systems, send a message below.
+          </p>
+        </div>
+
+        <!-- The Contact Box -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Hunter" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Software Engineering Opportunity / Collaboration" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn-send-message">
+                <span>Send Message</span> ↗
+              </button>
+              <span id="contact-feedback" class="form-feedback-msg"></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-quick-links">
+          <a href="mailto:benzerkane.jihane@etu.uae.ac.ma" class="btn-secondary">
+            <span>Direct Email</span> ↗
+          </a>
+          <a href="https://www.linkedin.com/in/jihanebenzerkane" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>LinkedIn</span> ↗
+          </a>
+          <a href="https://github.com/jihanebenzerkane" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>GitHub</span> ↗
+          </a>
+          <a href="https://f1track.duckdns.org" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>F1Track Live</span> ↗
+          </a>
+        </div>
+
+        <div class="contact-footnote">
+          benzerkane.jihane@etu.uae.ac.ma · ENSAH, Al Hoceima / Rabat, Morocco
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div>
+        <strong>Jihane Benzerkane</strong> · Digital Transformation & AI, ENSAH
+      </div>
+      <div>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Real F1Track Snapshots -->
+  <div id="snapshot-lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Snapshot Zoom">
+    <div class="lightbox-modal">
+      <div class="lightbox-header">
+        <span id="lightbox-title">F1Track Snapshot</span>
+        <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close lightbox">✕</button>
+      </div>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Zoomed Snapshot" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
