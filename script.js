@@ -239,6 +239,47 @@ function initContactForm() {
 }
 
 // ============================================================================
+// CODEDOJO SNAPSHOT GALLERY
+// ============================================================================
+function initCodeDojoGallery() {
+  const tabs = document.querySelectorAll('.codedojo-tab');
+  const imgEl = document.getElementById('codedojo-active-img');
+  const lightbox = document.getElementById('snapshot-lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTitle = document.getElementById('lightbox-title');
+
+  if (!tabs.length || !imgEl) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const src = tab.dataset.src;
+      const title = tab.dataset.title;
+      if (src) {
+        imgEl.style.opacity = '0.4';
+        setTimeout(() => {
+          imgEl.src = src;
+          imgEl.alt = title;
+          imgEl.title = 'Click to view full-resolution: ' + title;
+          imgEl.style.opacity = '1';
+        }, 120);
+      }
+    });
+  });
+
+  if (lightbox && lightboxImg) {
+    imgEl.addEventListener('click', () => {
+      const activeTab = document.querySelector('.codedojo-tab.active');
+      lightboxImg.src = imgEl.src;
+      lightboxTitle.textContent = activeTab ? activeTab.dataset.title : 'CodeDojo Project Snapshot';
+      lightbox.classList.add('active');
+    });
+  }
+}
+
+// ============================================================================
 // NAVIGATION
 // ============================================================================
 function initNavigation() {
@@ -261,6 +302,8 @@ function initNavigation() {
 document.addEventListener('DOMContentLoaded', () => {
   initAutumnRainCanvas();
   initSnapshotGallery();
+  initCodeDojoGallery();
   initContactForm();
   initNavigation();
 });
+

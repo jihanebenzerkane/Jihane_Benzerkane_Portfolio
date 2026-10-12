@@ -1016,6 +1016,80 @@ body {
   flex: 1;
 }
 
+/* CodeDojo Card & Interactive Tabs Header */
+.codedojo-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.codedojo-visual-header {
+  position: relative;
+  background: #110e0c;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.codedojo-tabs-bar {
+  display: flex;
+  gap: 4px;
+  padding: 8px 10px;
+  background: #18120e;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.15);
+  overflow-x: auto;
+}
+
+.codedojo-tab {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.codedojo-tab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.codedojo-tab.active {
+  background: rgba(217, 119, 6, 0.22);
+  border-color: rgba(217, 119, 6, 0.45);
+  color: var(--autumn-honey);
+  font-weight: 600;
+}
+
+.codedojo-img-wrap {
+  height: 155px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background: #0f0c0a;
+}
+
+.codedojo-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.3s ease, opacity 0.15s ease;
+  display: block;
+}
+
+.codedojo-card:hover .codedojo-preview-img {
+  transform: scale(1.03);
+}
+
+.codedojo-card-body {
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .sub-card-kicker {
   font-family: var(--font-mono);
   font-size: 0.66rem;
